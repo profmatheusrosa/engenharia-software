@@ -27,7 +27,7 @@ Mostra a estrutura estática do sistema (classes, atributos, métodos e relacion
 Mostra como os objetos interagem ao longo do tempo para realizar um cenário.
 - Útil para: Entender fluxos complexos e chamadas de API.
 
-[IMAGEM_07_UML_ESSENCIAL_COLLAGE]
+![Esquema simplificado UML dos três principais diagramas: Caso de Uso, Classes e Sequência](../imagens/imagem_07_uml_essencial_collage.png)
 
 ## 3.2 Boas práticas de modelagem
 
@@ -45,7 +45,7 @@ Criado por Simon Brown, o modelo C4 é o padrão moderno para arquitetura de sof
 3.  **Components (Nível 3):** Detalhes dentro de um container (Controllers, Services, Repositories).
 4.  **Code (Nível 4):** Diagramas de classes (geralmente não desenhamos este nível manualmente).
 
-[IMAGEM_08_MODELO_C4_ZOOM]
+![Ilustração conceitual do Modelo C4 mostrando os 4 níveis de zoom](../imagens/imagem_08_modelo_c4_zoom.png)
 
 **Exercício 3.3:** Qual nível do C4 mostraria a interação entre sua API Backend e o Banco de Dados PostgreSQL?
 

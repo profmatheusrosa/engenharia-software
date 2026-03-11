@@ -37,6 +37,18 @@ Os principios SOLID foram introduzidos por Robert C. Martin (Uncle Bob) no inici
 
 ---
 
+### Por que usar SOLID?
+
+Em projetos de pequeno porte, a falta de estruturação pode não ser um problema imediato. No entanto, à medida que o sistema cresce, a ausência desses princípios leva ao chamado **"Código Rígido"** e **"Frágil"**:
+- **Rigidez:** Uma pequena mudança quebra diversas partes do sistema.
+- **Fragilidade:** É difícil mudar o código porque o impacto é imprevisível.
+- **Imobilidade:** Você não consegue reaproveitar partes do código em outros projetos.
+
+Seguir o SOLID ajuda a criar um código mais coeso, com baixo acoplamento e altamente testável.
+
+---
+
+
 ### 5.1.1 S - Single Responsibility Principle (SRP)
 
 > "Uma classe deve ter um, e apenas um, motivo para mudar." - Robert C. Martin [1]
@@ -141,6 +153,10 @@ public class NotificacaoPedidoService {
 
 **Resultado:** Agora cada classe tem um unico motivo para mudar. Se o banco de dados mudar, so `PedidoRepository` e afetado. Se a regra de notificacao mudar, so `NotificacaoPedidoService` e alterado.
 
+> [!TIP]
+> **Dica Pro:** Se a sua classe precisa de mais de 10 segundos para ser explicada (ex: "Ela faz o cálculo de frete **E** a validação de estoque **E** o log"), ela provavelmente viola o SRP.
+
+
 **Exercicio 5.1:** Qual e o principal beneficio de aplicar o Principio da Responsabilidade Unica (SRP)?
 
 - a) Reduzir o numero total de classes no sistema
@@ -242,6 +258,10 @@ public class CalculadoraDesconto {
 ```
 
 **Resultado:** Para adicionar um novo desconto (ex: `DescontoDiaDasMaes`), basta criar uma nova classe que implemente `EstrategiaDesconto`. A classe `CalculadoraDesconto` **nunca mais precisa ser alterada**. Este padrao e conhecido como **Strategy Pattern** (Padrao Estrategia).
+
+> [!TIP]
+> **Dica Pro:** O uso excessivo de `switch/case` ou `if/else` complexos verificando enums ou tipos é um forte indício de violação de OCP. Considere usar Polimorfismo.
+
 
 **Exercicio 5.1.1:** Considere o seguinte trecho de codigo:
 
@@ -364,6 +384,10 @@ public class BirdWatcher {
 ```
 
 **Resultado:** Agora a hierarquia esta correta. `Pinguim` nao e forcado a implementar um metodo que nao faz sentido para ele. O codigo cliente que precisa de aves voadoras usa a interface `Voadora`, garantindo que so recebera objetos que realmente sabem voar.
+
+> [!TIP]
+> **Dica Pro:** Testes de unidade escritos para a Superclasse devem passar sem modificações quando executados contra qualquer objeto de uma Subclasse.
+
 
 **Exercicio 5.1.2:** Em qual cenario o Principio de Substituicao de Liskov esta sendo violado?
 
@@ -668,6 +692,10 @@ ProcessarPedidoService service = new ProcessarPedidoService(new MongoDBPedidoRep
 
 **Resultado:** Agora `ProcessarPedidoService` depende apenas da interface `PedidoRepository`. Podemos trocar a implementacao de banco de dados sem tocar na logica de negocio. Alem disso, testes unitarios podem usar uma implementacao fake (`PedidoRepositoryFake`) para testar a logica sem precisar de um banco real.
 
+> [!TIP]
+> **Dica Pro:** **Inversão de Dependência (DIP)** é um conceito arquitetural. **Injeção de Dependência (DI)** é uma técnica/padrão para implementar essa inversão. Não os confunda!
+
+
 **Exercicio 5.1.4:** No exemplo abaixo, qual principio SOLID esta sendo violado?
 
 ```java
@@ -706,7 +734,7 @@ public class RelatorioVendas {
 | **ISP** | A classe e obrigada a implementar metodos que nao usa? | Divida a interface |
 | **DIP** | A classe de negocio instancia diretamente classes de infraestrutura? | Injete dependencias via interface |
 
-[IMAGEM_11_PRINCIPIOS_SOLID]
+![Infográfico educacional detalhado com os 5 princípios SOLID: SRP, OCP, LSP, ISP e DIP](../imagens/imagem_11_principios_solid.png)
 
 ## 5.2 GRASP
 

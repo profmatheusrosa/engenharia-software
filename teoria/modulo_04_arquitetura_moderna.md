@@ -27,14 +27,14 @@ Proposta por "Uncle Bob" Martin. A regra de ouro é: **A dependência aponta par
 - As regras de negócio (Entidades/Use Cases) ficam no centro e NÃO dependem de nada externo (UI, Banco, Frameworks).
 - A UI e o Banco de Dados são meros detalhes periféricos.
 
-[IMAGEM_09_CLEAN_ARCHITECTURE_ONION]
+![Diagrama circular de "cebola" representando a Clean Architecture com camadas e dependências apontando para dentro](../imagens/imagem_09_clean_architecture_onion.png)
 
 ## 4.3 Arquitetura Hexagonal (Ports and Adapters)
 
 Muito similar à Clean Architecture. O sistema possui "Portas" (Interfaces) para se comunicar com o mundo exterior.
 - **Exemplo:** O sistema define uma porta `IRepository`. Um adaptador `PostgresRepository` implementa essa porta. O sistema não sabe que é Postgres, apenas que alguém implementou a porta.
 
-[IMAGEM_10_ARQUITETURA_HEXAGONAL]
+![Diagrama de um hexágono representando a Arquitetura Hexagonal com portas e adaptadores](../imagens/imagem_10_arquitetura_hexagonal.png)
 
 ## 4.4 Introdução a DDD (Domain-Driven Design)
 

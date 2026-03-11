@@ -39,7 +39,7 @@ Uma boa User Story deve ser:
 - **S**mall (Pequena)
 - **T**estable (Testável)
 
-[IMAGEM_04_TECNICA_INVEST]
+![Infográfico explicando a sigla INVEST para User Stories](../imagens/imagem_04_tecnica_invest.png)
 
 **Exercício 2.2:** Qual dos itens abaixo **NÃO** faz parte do acrônimo INVEST?
 
@@ -70,7 +70,7 @@ Detalham as condições que uma User Story deve satisfazer para ser aceita. Freq
 
 Técnica para visualizar a jornada do usuário e quebrar grandes requisitos (épicos) em histórias menores, organizando-as por prioridade de lançamento (Releases). Ajuda a não perder a "Big Picture".
 
-[IMAGEM_05_USER_STORY_MAPPING]
+![Diagrama ilustrando um User Story Mapping com a jornada do usuário e quebra em releases](../imagens/imagem_05_user_story_mapping.png)
 
 ## 2.5 Requisitos Não Funcionais (RNFs)
 
@@ -86,7 +86,7 @@ Antes de codificar classes e banco de dados, desenhamos o Modelo de Domínio par
 
 Exemplo: Em um E-commerce, temos `Cliente`, `Pedido`, `Produto`. Um `Pedido` *tem* vários `Itens de Pedido`.
 
-[IMAGEM_06_MODELO_DOMINIO_ECOMMERCE]
+![Diagrama de um modelo de domínio simples para um e-commerce](../imagens/imagem_06_modelo_dominio_ecommerce.png)
 
 **Exercício 2.6:** O que é um Modelo de Domínio?
 

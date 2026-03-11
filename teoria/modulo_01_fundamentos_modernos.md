@@ -16,7 +16,7 @@ Este módulo estabelece as bases da Engenharia de Software moderna, diferenciand
 
 A Engenharia de Software é a aplicação de uma abordagem sistemática, disciplinada e quantificável ao desenvolvimento, operação e manutenção de software[1]. Diferente da programação pura, que foca na escrita de código, a engenharia de software preocupa-se com todo o ciclo de vida do produto, desde a concepção até a descontinuação.
 
-![Ciclo de Vida do Software](../imagens/ciclo_vida_software.png)
+![Diagrama circular ilustrando o ciclo de vida do desenvolvimento de software moderno](../imagens/imagem_01_ciclo_de_vida_software.png)
 
 ### Programar vs. Projetar Software
 - **Programar:** Foco na resolução imediata de um problema lógico específico. Muitas vezes individual.
@@ -46,7 +46,7 @@ Qualidade de software não é apenas "não ter bugs". Segundo a ISO/IEC 25010, q
 3. **Testabilidade:** Facilidade de verificar se o software funciona corretamente.
 4. **Segurança:** Proteção de dados e informações.
 
-[IMAGEM_02_CARACTERISTICAS_QUALIDADE_ISO25010]
+![Mapa mental das características da qualidade de software segundo a ISO 25010](../imagens/imagem_02_caracteristicas_qualidade_iso25010.png)
 
 ## 1.3 Processos de Desenvolvimento
 
@@ -77,7 +77,7 @@ Framework para gerenciar trabalho complexo.
 ### Kanban
 Método visual para gerenciar trabalho à medida que ele avança em um processo. Foca em **fluxo contínuo** e limitar o trabalho em progresso (WIP).
 
-[IMAGEM_03_QUADRO_KANBAN]
+![Ilustração de um quadro Kanban clássico com três colunas: A Fazer, Em Progresso e Feito](../imagens/imagem_03_quadro_kanban.png)
 
 **Exercício 1.4:** Qual cerimônia do Scrum é focada na melhoria do processo da equipe?
 
