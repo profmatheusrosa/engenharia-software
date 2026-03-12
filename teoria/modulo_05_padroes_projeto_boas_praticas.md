@@ -1,4 +1,4 @@
-# Módulo 5: Projeto Orientado a Objetos Avançado
+# Módulo 5: Padrões de Projeto e Boas Práticas
 
 ## Sumario
 - [5.1 Principios SOLID](#51-principios-solid)
@@ -11,11 +11,14 @@
 - [5.2 GRASP](#52-grasp)
 - [5.3 Padroes de Projeto Modernos](#53-padroes-de-projeto-modernos-gof)
   - [5.3.1 Factory Method](#531-factory-method-criacional)
-  - [5.3.2 Builder](#532-builder-criacional)
-  - [5.3.3 Adapter](#533-adapter-estrutural)
-  - [5.3.4 Facade](#534-facade-estrutural)
-  - [5.3.5 Observer](#535-observer-comportamental)
-  - [5.3.6 Comparativo dos Padroes](#536-comparativo-dos-padroes)
+  - [5.3.2 Singleton](#532-singleton-criacional)
+  - [5.3.3 Builder](#533-builder-criacional)
+  - [5.3.4 Adapter](#534-adapter-estrutural)
+  - [5.3.5 Decorator](#535-decorator-estrutural)
+  - [5.3.6 Facade](#536-facade-estrutural)
+  - [5.3.7 Observer](#537-observer-comportamental)
+  - [5.3.8 Strategy](#538-strategy-comportamental)
+  - [5.3.9 Comparativo dos Padroes](#539-comparativo-dos-padroes)
 - [5.4 Repository Pattern](#54-repository-pattern)
 - [5.5 Anti-patterns](#55-anti-patterns)
 - [Referencias](#referencias)
@@ -883,7 +886,64 @@ public class SistemaNotificacao {
 
 ---
 
-### 5.3.2 Builder (Criacional)
+### 5.3.2 Singleton (Criacional)
+
+> "Garanta que uma classe tenha apenas uma instância e forneça um ponto global de acesso a ela." - GoF [4]
+
+O padrão Singleton assegura que apenas um objeto de uma determinada classe seja criado em todo o sistema. Isso é útil para recursos compartilhados que precisam ser inicializados uma única vez, como configurações, pools de conexão com banco de dados ou sistemas de log.
+
+**Como identificar o uso de Singleton:**
+- Construtores privados.
+- Um método estático público (geralmente chamado `getInstance()`) que retorna a única instância da classe.
+
+**Exemplo (com o padrão):**
+
+```java
+public class DatabaseConnection {
+    // A única instância da classe
+    private static DatabaseConnection instanciaUnica;
+    private Connection conexao;
+
+    // Construtor PRIVADO impede a criação direta de novas instâncias
+    private DatabaseConnection() {
+        // Inicializar conexão
+        this.conexao = DriverManager.getConnection("jdbc:mysql://localhost/app", "user", "pass");
+    }
+
+    // Ponto global de acesso
+    public static DatabaseConnection getInstance() {
+        if (instanciaUnica == null) {
+            instanciaUnica = new DatabaseConnection();
+        }
+        return instanciaUnica;
+    }
+
+    public Connection getConexao() {
+        return conexao;
+    }
+}
+```
+
+**Cuidados:** o Singleton pode ser considerado um anti-pattern se abusado (tornando-se uma "variável global glorificada" que aumenta o acoplamento e dificulta testes). Use com moderação.
+
+**Exercício 5.3.2:** Qual é o principal mecanismo usado para garantir que uma classe Singleton não seja instanciada mais de uma vez externamente?
+
+- a) Tornar a classe abstract.
+- b) Fazer com que os métodos sejam protegidos.
+- c) Usar um construtor privado e um método estático.
+- d) Utilizar a palavra-chave final na classe.
+
+<details>
+<summary>Ver Resposta</summary>
+
+**Resposta:** c) Usar um construtor privado e um método estático.
+
+**Explicação:** O construtor privado evita que a palavra-chave `new` seja usada fora da classe. O método estático (`getInstance()`) fornece acesso global à única instância, criando-a apenas na primeira vez que for chamado.
+</details>
+
+---
+
+### 5.3.3 Builder (Criacional)
 
 > "Separe a construcao de um objeto complexo da sua representacao, de forma que o mesmo processo de construcao possa criar diferentes representacoes." - GoF [4]
 
@@ -1052,7 +1112,7 @@ Relatorio relatorio = new Relatorio.Builder()
 
 ---
 
-### 5.3.3 Adapter (Estrutural)
+### 5.3.4 Adapter (Estrutural)
 
 > "Converta a interface de uma classe em outra interface que os clientes esperam. O Adapter permite que classes com interfaces incompativeis trabalhem juntas." - GoF [4]
 
@@ -1172,7 +1232,76 @@ loja2.finalizarCompra(150.00, "4111-1111-1111-1111");
 
 ---
 
-### 5.3.4 Facade (Estrutural)
+### 5.3.5 Decorator (Estrutural)
+
+> "Atribua responsabilidades adicionais a um objeto de forma dinâmica. Decorators fornecem uma alternativa flexível à herança para estender funcionalidades." - GoF [4]
+
+O padrão Decorator permite que você envolva objetos dentro de objetos especiais (os "decorators") com a mesma interface base, adicionando comportamento antes ou depois de passar as chamadas ao objeto embrulhado.
+
+**Analogia:** Pense em comprar um café. Você pede um "Café Simples", mas pode "decorar" o café com "Leite", "Chantilly" ou "Caramelo". O preço final é calculado passando pelos vários decorators aplicados.
+
+**Exemplo (com o padrão):**
+
+```java
+// Componente base
+public interface Cafe {
+    double getCusto();
+    String getDescricao();
+}
+
+public class CafeSimples implements Cafe {
+    public double getCusto() { return 2.0; }
+    public String getDescricao() { return "Café simples"; }
+}
+
+// Decorator base
+public abstract class CafeDecorator implements Cafe {
+    protected Cafe cafeDecorado;
+
+    public CafeDecorator(Cafe cafe) {
+        this.cafeDecorado = cafe;
+    }
+}
+
+// Decorator concreto: Adiciona Leite
+public class ComLeite extends CafeDecorator {
+    public ComLeite(Cafe cafe) { super(cafe); }
+
+    public double getCusto() {
+        return super.cafeDecorado.getCusto() + 1.5;
+    }
+
+    public String getDescricao() {
+        return super.cafeDecorado.getDescricao() + ", com leite";
+    }
+}
+
+// Uso:
+// Cafe meuCafe = new CafeSimples();
+// meuCafe = new ComLeite(meuCafe);
+// System.out.println(meuCafe.getDescricao() + " = R$" + meuCafe.getCusto());
+```
+
+**Benefícios:** Você adiciona novas funcionalidades sem violar o princípio Open/Closed e sem criar infinitas subclasses (ex: `CafeComLeite`, `CafeComChantilly`, `CafeComLeiteEChantilly`).
+
+**Exercício 5.3.5:** Qual é a principal vantagem do padrao Decorator em relação à herança?
+
+- a) Reduz o número de classes geradas.
+- b) Permite estender o comportamento de objetos de forma dinâmica.
+- c) Garante alta performance na execução.
+- d) Oculta os detalhes internos de implementação do objeto decorado.
+
+<details>
+<summary>Ver Resposta</summary>
+
+**Resposta:** b) Permite estender o comportamento de objetos de forma dinâmica.
+
+**Explicação:** Com a herança, o comportamento é estático e fixado. Com Decorators, você pode combinar múltiplos comportamentos durante a execução.
+</details>
+
+---
+
+### 5.3.6 Facade (Estrutural)
 
 > "Forneca uma interface unificada para um conjunto de interfaces em um subsistema. O Facade define uma interface de nivel mais alto que torna o subsistema mais facil de usar." - GoF [4]
 
@@ -1320,7 +1449,7 @@ public class CheckoutApiMobile {
 
 ---
 
-### 5.3.5 Observer (Comportamental)
+### 5.3.7 Observer (Comportamental)
 
 > "Defina uma dependencia um-para-muitos entre objetos, de modo que quando um objeto muda de estado, todos os seus dependentes sao notificados e atualizados automaticamente." - GoF [4]
 
@@ -1482,17 +1611,45 @@ pedido.alterarStatus("ENVIADO");
 
 ---
 
-### 5.3.6 Comparativo dos Padroes
+### 5.3.8 Strategy (Comportamental)
+
+> "Defina uma família de algoritmos, encapsule cada um deles e torne-os intercambiáveis. Strategy permite que o algoritmo varie independentemente dos clientes que o utilizam." - GoF [4]
+
+Vimos um exemplo prático de Strategy no Princípio **Open/Closed (OCP)**. Em vez de termos múltiplos blocos condicionais (`if/else` ou `switch`) dentro de um contexto, extraímos cada lógica para uma classe separada com uma interface comum.
+
+**Exemplo Prático:** A implementação de uma Calculadora de Impostos no Brasil, sem Strategy, teria uma cascata enorme de `if (tipo == "ICMS") ... else if (tipo == "ISS") ...`. Com o padrão Strategy, cada imposto vira uma classe como `ImpostoICMS` implementando uma interface comum `EstrategiaImposto` e o fluxo orquestrador só lida com a abstração.
+
+**Exercício 5.3.8:** Qual dos princípios SOLID é mais intimamente relacionado com o padrão Strategy?
+
+- a) Single Responsibility Principle (SRP)
+- b) Open/Closed Principle (OCP)
+- c) Interface Segregation Principle (ISP)
+- d) Liskov Substitution Principle (LSP)
+
+<details>
+<summary>Ver Resposta</summary>
+
+**Resposta:** b) Open/Closed Principle (OCP)
+
+**Explicação:** O padrão Strategy é a "ferramenta visual" mais comum para implementar o OCP. Adicionar uma nova Strategy não exige modificação do contexto (Closed for modification), mas a funcionalidade do sistema é expandida por causa da nova classe adicionada (Open for extension).
+</details>
+
+---
+
+### 5.3.9 Comparativo dos Padroes
 
 | Padrao | Categoria | Quando usar | Problema que resolve |
 |--------|-----------|-------------|---------------------|
 | **Factory** | Criacional | Criacao de objetos depende de condicoes | Acoplamento entre cliente e classes concretas |
+| **Singleton** | Criacional | Garantir apenas uma instância de um recurso compartilhado | Múltiplas instâncias consumindo recursos despiciendos |
 | **Builder** | Criacional | Objetos com muitos parametros opcionais | Construtores confusos e ilegíveis |
 | **Adapter** | Estrutural | Integrar classes com interfaces incompativeis | Incompatibilidade entre interfaces |
+| **Decorator** | Estrutural | Adicionar propriedades e comportamentos dinamicamente | Explosão do número de subclasses na hierarquia |
 | **Facade** | Estrutural | Simplificar acesso a subsistemas complexos | Complexidade excessiva para o cliente |
 | **Observer** | Comportamental | Reagir a mudancas de estado | Acoplamento entre quem notifica e quem escuta |
+| **Strategy** | Comportamental | Alternar entre algoritmos em tempo de execução | Múltiplos if/else ou swicthes para definir comportamento |
 
-![Um conjunto de 5 ícones acompanhados de breves descrições conceituais dos padrões de projeto: Factory, Builder, Adapter, Facade, Observer](../imagens/imagem_12_design_patterns_icons.png)
+![Um conjunto de 8 ícones acompanhados de breves descrições conceituais dos padrões de projeto: Factory, Singleton, Builder, Adapter, Decorator, Facade, Observer, Strategy](../imagens/imagem_12_design_patterns_icons.png)
 
 ## 5.4 Repository Pattern
 

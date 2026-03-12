@@ -48,9 +48,9 @@ engenharia-software-moderna/
 | | | 4.4 Introdução a DDD | Entidade vs Value Object, Agregados |
 | | | 4.5 Bounded Context | Contextos Delimitados, Linguagem Ubíqua |
 | | | 4.6 Monólito vs Microserviços | Escalabilidade, Complexidade Distribuída |
-| **Módulo 5** | OO Avançado | 5.1 Princípios SOLID | SRP, OCP, LSP, ISP, DIP |
+| **Módulo 5** | Padrões de Projeto e Boas Práticas | 5.1 Princípios SOLID | SRP, OCP, LSP, ISP, DIP |
 | | | 5.2 GRASP | Controller, Creator, High Cohesion, Low Coupling |
-| | | 5.3 Padrões de Projeto Modernos | Factory, Adapter, Facade, Observer |
+| | | 5.3 Padrões de Projeto Modernos | Factory, Singleton, Builder, Adapter, Decorator, Facade, Observer, Strategy |
 | | | 5.4 Repository Pattern | Abstração de acesso a dados |
 | | | 5.5 Anti-patterns | God Class, Spaghetti Code, Golden Hammer |
 | **Módulo 6** | Implementação e Qualidade | 6.1 Do Modelo ao Código | Traceability, Rastreabilidade |
@@ -71,7 +71,7 @@ engenharia-software-moderna/
 | Módulo 2<br>Requisitos Modernos | [Teoria](teoria/modulo_02_requisitos_modernos.md) | [Exercícios](exercicios/modulo_02_exercicios_requisitos_modernos.md) | [Projeto](projetos/modulo_02_projeto_requisitos_modernos.md) |
 | Módulo 3<br>Modelagem e Documentação | [Teoria](teoria/modulo_03_modelagem_e_documentacao.md) | [Exercícios](exercicios/modulo_03_exercicios_modelagem_e_documentacao.md) | [Projeto](projetos/modulo_03_projeto_modelagem_e_documentacao.md) |
 | Módulo 4<br>Arquitetura Moderna | [Teoria](teoria/modulo_04_arquitetura_moderna.md) | [Exercícios](exercicios/modulo_04_exercicios_arquitetura_moderna.md) | [Projeto](projetos/modulo_04_projeto_arquitetura_moderna.md) |
-| Módulo 5<br>OO Avançado | [Teoria](teoria/modulo_05_oo_avancado.md) | [Exercícios](exercicios/modulo_05_exercicios_oo_avancado.md) | [Projeto](projetos/modulo_05_projeto_oo_avancado.md) |
+| Módulo 5<br>Padrões de Projeto e Boas Práticas | [Teoria](teoria/modulo_05_oo_avancado.md) | [Exercícios](exercicios/modulo_05_exercicios_oo_avancado.md) | [Projeto](projetos/modulo_05_projeto_oo_avancado.md) |
 | Módulo 6<br>Implementação e Qualidade | [Teoria](teoria/modulo_06_implementacao_e_qualidade.md) | [Exercícios](exercicios/modulo_06_exercicios_implementacao_e_qualidade.md) | [Projeto](projetos/modulo_06_projeto_implementacao_e_qualidade.md) |
 | Módulo 7<br>DevOps e Entrega Contínua | [Teoria](teoria/modulo_07_devops_e_entrega_continua.md) | [Exercícios](exercicios/modulo_07_exercicios_devops_e_entrega_continua.md) | [Projeto](projetos/modulo_07_projeto_devops_e_entrega_continua.md) |
 

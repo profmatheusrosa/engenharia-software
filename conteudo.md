@@ -25,9 +25,9 @@
 |  |  | 4.4 Introdução a DDD | Entidades, Value Objects, Agregados |
 |  |  | 4.5 Bounded Context | Organização de domínios complexos |
 |  |  | 4.6 Monólito vs Microserviços | Quando usar cada abordagem |
-| **Módulo 5** | 5. Projeto Orientado a Objetos Avançado | 5.1 Princípios SOLID | Aplicação prática |
+| **Módulo 5** | 5. Padrões de Projeto e Boas Práticas | 5.1 Princípios SOLID | Aplicação prática |
 |  |  | 5.2 GRASP | Creator, Controller, Low Coupling |
-|  |  | 5.3 Padrões de Projeto Modernos | Factory, Builder, Adapter, Facade, Observer |
+|  |  | 5.3 Padrões de Projeto Modernos | Factory, Singleton, Builder, Adapter, Decorator, Facade, Observer, Strategy |
 |  |  | 5.4 Repository Pattern | Persistência desacoplada |
 |  |  | 5.5 Anti-patterns | God Object, acoplamento excessivo |
 | **Módulo 6** | 6. Implementação e Qualidade | 6.1 Do modelo ao código | Tradução de diagramas e domínio para código |
