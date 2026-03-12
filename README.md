@@ -71,7 +71,7 @@ engenharia-software-moderna/
 | Módulo 2<br>Requisitos Modernos | [Teoria](teoria/modulo_02_requisitos_modernos.md) | [Exercícios](exercicios/modulo_02_exercicios_requisitos_modernos.md) | [Projeto](projetos/modulo_02_projeto_requisitos_modernos.md) |
 | Módulo 3<br>Modelagem e Documentação | [Teoria](teoria/modulo_03_modelagem_e_documentacao.md) | [Exercícios](exercicios/modulo_03_exercicios_modelagem_e_documentacao.md) | [Projeto](projetos/modulo_03_projeto_modelagem_e_documentacao.md) |
 | Módulo 4<br>Arquitetura Moderna | [Teoria](teoria/modulo_04_arquitetura_moderna.md) | [Exercícios](exercicios/modulo_04_exercicios_arquitetura_moderna.md) | [Projeto](projetos/modulo_04_projeto_arquitetura_moderna.md) |
-| Módulo 5<br>Padrões de Projeto e Boas Práticas | [Teoria](teoria/modulo_05_oo_avancado.md) | [Exercícios](exercicios/modulo_05_exercicios_oo_avancado.md) | [Projeto](projetos/modulo_05_projeto_oo_avancado.md) |
+| Módulo 5<br>Padrões de Projeto e Boas Práticas | [Teoria](teoria/modulo_05_padroes_projeto_boas_praticas.md) | [Exercícios](exercicios/modulo_05_exercicios_padroes_projeto_boas_praticas.md) | [Projeto](projetos/modulo_05_projeto_padroes_projeto_boas_praticas.md) |
 | Módulo 6<br>Implementação e Qualidade | [Teoria](teoria/modulo_06_implementacao_e_qualidade.md) | [Exercícios](exercicios/modulo_06_exercicios_implementacao_e_qualidade.md) | [Projeto](projetos/modulo_06_projeto_implementacao_e_qualidade.md) |
 | Módulo 7<br>DevOps e Entrega Contínua | [Teoria](teoria/modulo_07_devops_e_entrega_continua.md) | [Exercícios](exercicios/modulo_07_exercicios_devops_e_entrega_continua.md) | [Projeto](projetos/modulo_07_projeto_devops_e_entrega_continua.md) |
 

@@ -1,4 +1,4 @@
-# Exercícios - Módulo 5: OO Avançado e SOLID
+# Exercícios - Módulo 5: Padrões de Projeto e Boas Práticas
 
 ## Exercício Prático: Refatorando com SOLID
 

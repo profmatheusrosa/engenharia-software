@@ -87,6 +87,6 @@ Em vez de criar uma classe `Produto` gigante (God Class), criamos modelos difere
 ---
 [← Módulo anterior](../teoria/modulo_03_modelagem_e_documentacao.md)
 
-[Próximo módulo →](../teoria/modulo_05_oo_avancado.md)
+[Próximo módulo →](../teoria/modulo_05_padroes_projeto_boas_praticas.md)
 
 [Voltar aos Links Rápidos](../README.md#links-rapidos)

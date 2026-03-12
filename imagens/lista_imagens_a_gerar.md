@@ -57,8 +57,8 @@
 
 - [x] **Módulo:** 5
   - **Placeholder:** `[IMAGEM_12_DESIGN_PATTERNS_ICONS]`
-  - **Descrição:** Ícones representando padrões de design comuns: Engrenagem (Factory), Tijolos (Builder), Adaptador de tomada (Adapter), Fachada de prédio (Facade), Olho (Observer).
-  - **Prompt:** A set of 5 minimal icons representing Design Patterns: Factory (Gear), Builder (Bricks), Adapter (Plug adapter), Facade (Building front), Observer (Eye). Clean lines, unified style.
+  - **Descrição:** Ícones representando padrões de design comuns: Engrenagem (Factory), Ponto único/Estrela (Singleton), Tijolos (Builder), Adaptador de tomada (Adapter), Bolo com cereja (Decorator), Fachada de prédio (Facade), Olho (Observer), Setas cruzadas (Strategy).
+  - **Prompt:** A highly detailed and informative educational infographic illustrating 8 Design Patterns. A set of 8 panels with minimal icons representing Design Patterns: Gear, Single Star, Bricks, Plug Adapter, Cake with Cherry, Building Front, Eye, Intersecting Arrows. Include symbols and short descriptive text for each element. Use ONLY the following words for labels and descriptions: 'Factory', 'Criacional', 'Singleton', 'Instância Única', 'Builder', 'Passo a Passo', 'Adapter', 'Conversão', 'Decorator', 'Adição Dinâmica', 'Facade', 'Interface Unificada', 'Observer', 'Notificação', 'Strategy', 'Algoritmos Intercambiáveis'. DO NOT use English words. DO NOT write 'pt-BR' anywhere in the image. Professional design, technical aesthetic, clear and educational, flat vector style, software engineering infographic.
 
 - [x] **Módulo:** 6
   - **Placeholder:** `[IMAGEM_13_PIRAMIDE_DE_TESTES]`

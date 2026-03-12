@@ -75,7 +75,7 @@ Revisão de código por pares. Não é para caçar bugs (testes fazem isso), é 
 [2] FOWLER, Martin. Refactoring: Improving the Design of Existing Code. Addison-Wesley, 1999.
 
 ---
-[← Módulo anterior](../teoria/modulo_05_oo_avancado.md)
+[← Módulo anterior](../teoria/modulo_05_padroes_projeto_boas_praticas.md)
 
 [Próximo módulo →](../teoria/modulo_07_devops_e_entrega_continua.md)
 
