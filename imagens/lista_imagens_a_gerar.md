@@ -55,27 +55,27 @@
   - **Descrição:** Uma composição visual com 5 quadros, cada um representando um princípio SOLID com uma metáfora visual simples (Ex: SRP = Canivete vs Faca Especializada; LSP = Pato de Borracha). Estilo clean e iconográfico.
   - **Prompt:** A composition of 5 simple icons representing SOLID principles. S: Single Responsibility, O: Open/Closed, L: Liskov Substitution, I: Interface Segregation, D: Dependency Inversion. Minimalist, modern iconography. Text in Portuguese where applicable.
 
-- [ ] **Módulo:** 5
+- [x] **Módulo:** 5
   - **Placeholder:** `[IMAGEM_12_DESIGN_PATTERNS_ICONS]`
   - **Descrição:** Ícones representando padrões de design comuns: Engrenagem (Factory), Tijolos (Builder), Adaptador de tomada (Adapter), Fachada de prédio (Facade), Olho (Observer).
   - **Prompt:** A set of 5 minimal icons representing Design Patterns: Factory (Gear), Builder (Bricks), Adapter (Plug adapter), Facade (Building front), Observer (Eye). Clean lines, unified style.
 
-- [ ] **Módulo:** 6
+- [x] **Módulo:** 6
   - **Placeholder:** `[IMAGEM_13_PIRAMIDE_DE_TESTES]`
   - **Descrição:** Pirâmide de Testes clássica. Base larga: "Testes Unitários (Rápido/Barato)". Meio: "Testes de Integração". Topo estreito: "Testes E2E (Lento/Caro)". Nuvem ou Olho no topo representando Testes Manuais.
   - **Prompt:** The Test Pyramid diagram. Wide base labeled 'Unit Tests'. Middle layer 'Integration Tests'. Narrow top 'E2E Tests'. Cloud at the very top 'Manual Tests'. Arrow on side showing 'Speed/Cost'. Clean, educational infographic. Text in Portuguese.
 
-- [ ] **Módulo:** 6
+- [x] **Módulo:** 6
   - **Placeholder:** `[IMAGEM_14_FLUXO_CODE_REVIEW]`
   - **Descrição:** Diagrama de fluxo simples: Autor abre Pull Request -> CI roda testes (Automático) -> Revisor comenta -> Autor corrige -> Revisor aprova -> Merge.
   - **Prompt:** A flowchart showing the Code Review process. Steps: 'Open PR', 'CI Tests', 'Review', 'Changes', 'Approved', 'Merge'. Linear flow with a loop for changes. Modern flowchart style. Text in Portuguese.
 
-- [ ] **Módulo:** 7
+- [x] **Módulo:** 7
   - **Placeholder:** `[IMAGEM_15_GIT_FLOW_VS_TRUNK]`
   - **Descrição:** Comparativo visual Lado a Lado. Esquerda (Git Flow): Muitas branches paralelas (develop, release, feature). Direita (Trunk-Based): Uma linha Mestra grossa com pequenas branches saindo e voltando rápido.
   - **Prompt:** Split screen comparison diagram. Left: Git Flow (complex branching, multiple parallel lines). Right: Trunk-Based Development (single thick line with short offshoots). Labeled 'Git Flow' and 'Trunk-Based'. Clean, technical style. Text in Portuguese.
 
-- [ ] **Módulo:** 7
+- [x] **Módulo:** 7
   - **Placeholder:** `[IMAGEM_16_PIPELINE_CICD]`
   - **Descrição:** Visualização horizontal de uma Pipeline. Ícones conectados por setas: Código (Git) -> Build (Engrenagem) -> Teste (Checklist) -> Deploy (Foguete) -> Monitoramento (Gráfico).
-  - **Prompt:** A horizontal CI/CD Pipeline visualization. Icons connected by arrows: Code (Git logo), Build (Gear), Test (Checklist), Deploy (Rocket), Monitor (Graph). Modern, sleek interface style. Text in Portuguese.
+  - **Prompt:** A horizontal CI/CD Pipeline visualization. Icons connected by arrows: Code (Git logo), Build (Gear), Test (Checklist), Deploy (Deploy/Rocket), Monitor (Graph). Modern, sleek interface style. Text in Portuguese.

@@ -92,6 +92,8 @@ User -> (Login)
 [2] FOWLER, Martin. UML Distilled: A Brief Guide to the Standard Object Modeling Language. Addison-Wesley, 2003.
 
 ---
+[← Módulo anterior](../teoria/modulo_02_requisitos_modernos.md)
+
 [Próximo módulo →](../teoria/modulo_04_arquitetura_moderna.md)
 
 [Voltar aos Links Rápidos](../README.md#links-rapidos)

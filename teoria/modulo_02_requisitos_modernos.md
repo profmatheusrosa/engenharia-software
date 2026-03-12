@@ -112,6 +112,8 @@ Exemplo: Em um E-commerce, temos `Cliente`, `Pedido`, `Produto`. Um `Pedido` *te
 [3] SOMMERVILLE, Ian. Software Engineering. 10th Edition. Pearson, 2015.
 
 ---
+[← Módulo anterior](../teoria/modulo_01_fundamentos_modernos.md)
+
 [Próximo módulo →](../teoria/modulo_03_modelagem_e_documentacao.md)
 
 [Voltar aos Links Rápidos](../README.md#links-rapidos)

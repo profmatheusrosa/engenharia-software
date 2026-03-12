@@ -1492,7 +1492,7 @@ pedido.alterarStatus("ENVIADO");
 | **Facade** | Estrutural | Simplificar acesso a subsistemas complexos | Complexidade excessiva para o cliente |
 | **Observer** | Comportamental | Reagir a mudancas de estado | Acoplamento entre quem notifica e quem escuta |
 
-[IMAGEM_12_DESIGN_PATTERNS_ICONS]
+![Um conjunto de 5 ícones acompanhados de breves descrições conceituais dos padrões de projeto: Factory, Builder, Adapter, Facade, Observer](../imagens/imagem_12_design_patterns_icons.png)
 
 ## 5.4 Repository Pattern
 
@@ -1522,6 +1522,8 @@ O que NÃO fazer:
 [6] MARTIN, Robert C. Agile Software Development, Principles, Patterns, and Practices. Prentice Hall, 2002.
 
 ---
+[← Módulo anterior](../teoria/modulo_04_arquitetura_moderna.md)
+
 [Próximo módulo →](../teoria/modulo_06_implementacao_e_qualidade.md)
 
 [Voltar aos Links Rápidos](../README.md#links-rapidos)
