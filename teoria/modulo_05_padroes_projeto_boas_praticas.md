@@ -737,7 +737,7 @@ public class RelatorioVendas {
 | **ISP** | A classe e obrigada a implementar metodos que nao usa? | Divida a interface |
 | **DIP** | A classe de negocio instancia diretamente classes de infraestrutura? | Injete dependencias via interface |
 
-![Infográfico educacional detalhado com os 5 princípios SOLID: SRP, OCP, LSP, ISP e DIP](../imagens/imagem_11_principios_solid.png)
+![Infográfico educacional detalhado com os 5 princípios SOLID: SRP, OCP, LSP, ISP e DIP](../imagens/imagem_12_principios_solid.png)
 
 ## 5.2 GRASP
 
@@ -1649,7 +1649,7 @@ Vimos um exemplo prático de Strategy no Princípio **Open/Closed (OCP)**. Em ve
 | **Observer** | Comportamental | Reagir a mudancas de estado | Acoplamento entre quem notifica e quem escuta |
 | **Strategy** | Comportamental | Alternar entre algoritmos em tempo de execução | Múltiplos if/else ou swicthes para definir comportamento |
 
-![Um conjunto de 8 ícones acompanhados de breves descrições conceituais dos padrões de projeto: Factory, Singleton, Builder, Adapter, Decorator, Facade, Observer, Strategy](../imagens/imagem_12_design_patterns_icons.png)
+![Um conjunto de 8 ícones acompanhados de breves descrições conceituais dos padrões de projeto: Factory, Singleton, Builder, Adapter, Decorator, Facade, Observer, Strategy](../imagens/imagem_13_design_patterns_icons.png)
 
 ## 5.4 Repository Pattern
 

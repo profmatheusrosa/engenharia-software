@@ -1,4 +1,4 @@
-# Lista de Imagens a Gerar
+﻿# Lista de Imagens a Gerar
 
 - [x] **Módulo:** 1
   - **Placeholder:** `[IMAGEM_01_CICLO_DE_VIDA_SOFTWARE]`
@@ -40,42 +40,47 @@
   - **Descrição:** Uma ilustração conceitual do Modelo C4 mostrando os 4 níveis de zoom como se fossem lentes de aumento. Nível 1 (Contexto) -> Nível 2 (Containers) -> Nível 3 (Componentes) -> Nível 4 (Código).
   - **Prompt:** Conceptual illustration of the C4 Model showing 4 levels of zoom like magnifying glasses. Level 1: Context, Level 2: Containers, Level 3: Components, Level 4: Code. Abstract, modern tech style. Text in Portuguese.
 
+- [x] **Módulo:** 3
+  - **Placeholder:** `[IMAGEM_09_RELACIONAMENTOS_UML]`
+  - **Descrição:** Infográfico ilustrando os tipos de relacionamentos em UML: Associação, Agregação, Composição e Herança.
+  - **Prompt:** A highly detailed and informative educational infographic illustrating UML Relationships. Four panels or sections showing: 1. Association (simple line), 2. Aggregation (empty diamond), 3. Composition (filled diamond), 4. Inheritance (empty arrow). Include symbols and short descriptive text for each element. Use ONLY the following words for labels and descriptions: 'Associação', 'Conexão simples entre objetos', 'Agregação', 'O todo contém as partes', 'Composição', 'A parte não existe sem o todo', 'Herança', 'Um objeto é um tipo de outro'. DO NOT use English words. DO NOT write 'pt-BR' anywhere in the image. Professional design, technical aesthetic, clear and educational, flat vector style, software engineering infographic.
+
 - [x] **Módulo:** 4
-  - **Placeholder:** `[IMAGEM_09_CLEAN_ARCHITECTURE_ONION]`
+  - **Placeholder:** `[IMAGEM_10_CLEAN_ARCHITECTURE_ONION]`
   - **Descrição:** Diagrama circular de "cebola" para Clean Architecture. Círculo Central: Entidades. Círculo do Meio: Casos de Uso. Círculo Externo: Controllers/Gateways. Círculo Mais Externo: UI/DB/Devices. Setas apontando para dentro.
   - **Prompt:** Concentric circles diagram representing Clean Architecture (The Onion Architecture). Inner circle: 'Entities'. Middle: 'Use Cases'. Outer: 'Interface Adapters'. Outermost: 'Frameworks & Drivers'. Arrows pointing inwards. Clean, technical style. Text in Portuguese.
 
 - [x] **Módulo:** 4
-  - **Placeholder:** `[IMAGEM_10_ARQUITETURA_HEXAGONAL]`
+  - **Placeholder:** `[IMAGEM_11_ARQUITETURA_HEXAGONAL]`
   - **Descrição:** Diagrama de um hexágono representando a Aplicação (Core). No lado esquerdo (Input), setas entrando (API, UI, Testes). No lado direito (Output), setas saindo para Adaptadores (Banco de Dados, Email, Filas).
   - **Prompt:** Hexagonal Architecture diagram (Ports and Adapters). Central hexagon labelled 'Core Application'. Left side input arrows: 'API', 'GUI', 'Test'. Right side output arrows: 'Database', 'Email', 'Queue'. Professional technical diagram style. Text in Portuguese.
 
 - [x] **Módulo:** 5
-  - **Placeholder:** `[IMAGEM_11_PRINCIPIOS_SOLID]`
+  - **Placeholder:** `[IMAGEM_12_PRINCIPIOS_SOLID]`
   - **Descrição:** Uma composição visual com 5 quadros, cada um representando um princípio SOLID com uma metáfora visual simples (Ex: SRP = Canivete vs Faca Especializada; LSP = Pato de Borracha). Estilo clean e iconográfico.
   - **Prompt:** A composition of 5 simple icons representing SOLID principles. S: Single Responsibility, O: Open/Closed, L: Liskov Substitution, I: Interface Segregation, D: Dependency Inversion. Minimalist, modern iconography. Text in Portuguese where applicable.
 
 - [x] **Módulo:** 5
-  - **Placeholder:** `[IMAGEM_12_DESIGN_PATTERNS_ICONS]`
+  - **Placeholder:** `[IMAGEM_13_DESIGN_PATTERNS_ICONS]`
   - **Descrição:** Ícones representando padrões de design comuns: Engrenagem (Factory), Ponto único/Estrela (Singleton), Tijolos (Builder), Adaptador de tomada (Adapter), Bolo com cereja (Decorator), Fachada de prédio (Facade), Olho (Observer), Setas cruzadas (Strategy).
   - **Prompt:** A highly detailed and informative educational infographic illustrating 8 Design Patterns. A set of 8 panels with minimal icons representing Design Patterns: Gear, Single Star, Bricks, Plug Adapter, Cake with Cherry, Building Front, Eye, Intersecting Arrows. Include symbols and short descriptive text for each element. Use ONLY the following words for labels and descriptions: 'Factory', 'Criacional', 'Singleton', 'Instância Única', 'Builder', 'Passo a Passo', 'Adapter', 'Conversão', 'Decorator', 'Adição Dinâmica', 'Facade', 'Interface Unificada', 'Observer', 'Notificação', 'Strategy', 'Algoritmos Intercambiáveis'. DO NOT use English words. DO NOT write 'pt-BR' anywhere in the image. Professional design, technical aesthetic, clear and educational, flat vector style, software engineering infographic.
 
 - [x] **Módulo:** 6
-  - **Placeholder:** `[IMAGEM_13_PIRAMIDE_DE_TESTES]`
+  - **Placeholder:** `[IMAGEM_14_PIRAMIDE_DE_TESTES]`
   - **Descrição:** Pirâmide de Testes clássica. Base larga: "Testes Unitários (Rápido/Barato)". Meio: "Testes de Integração". Topo estreito: "Testes E2E (Lento/Caro)". Nuvem ou Olho no topo representando Testes Manuais.
   - **Prompt:** The Test Pyramid diagram. Wide base labeled 'Unit Tests'. Middle layer 'Integration Tests'. Narrow top 'E2E Tests'. Cloud at the very top 'Manual Tests'. Arrow on side showing 'Speed/Cost'. Clean, educational infographic. Text in Portuguese.
 
 - [x] **Módulo:** 6
-  - **Placeholder:** `[IMAGEM_14_FLUXO_CODE_REVIEW]`
+  - **Placeholder:** `[IMAGEM_15_FLUXO_CODE_REVIEW]`
   - **Descrição:** Diagrama de fluxo simples: Autor abre Pull Request -> CI roda testes (Automático) -> Revisor comenta -> Autor corrige -> Revisor aprova -> Merge.
   - **Prompt:** A flowchart showing the Code Review process. Steps: 'Open PR', 'CI Tests', 'Review', 'Changes', 'Approved', 'Merge'. Linear flow with a loop for changes. Modern flowchart style. Text in Portuguese.
 
 - [x] **Módulo:** 7
-  - **Placeholder:** `[IMAGEM_15_GIT_FLOW_VS_TRUNK]`
+  - **Placeholder:** `[IMAGEM_16_GIT_FLOW_VS_TRUNK]`
   - **Descrição:** Comparativo visual Lado a Lado. Esquerda (Git Flow): Muitas branches paralelas (develop, release, feature). Direita (Trunk-Based): Uma linha Mestra grossa com pequenas branches saindo e voltando rápido.
   - **Prompt:** Split screen comparison diagram. Left: Git Flow (complex branching, multiple parallel lines). Right: Trunk-Based Development (single thick line with short offshoots). Labeled 'Git Flow' and 'Trunk-Based'. Clean, technical style. Text in Portuguese.
 
 - [x] **Módulo:** 7
-  - **Placeholder:** `[IMAGEM_16_PIPELINE_CICD]`
+  - **Placeholder:** `[IMAGEM_17_PIPELINE_CICD]`
   - **Descrição:** Visualização horizontal de uma Pipeline. Ícones conectados por setas: Código (Git) -> Build (Engrenagem) -> Teste (Checklist) -> Deploy (Foguete) -> Monitoramento (Gráfico).
   - **Prompt:** A horizontal CI/CD Pipeline visualization. Icons connected by arrows: Code (Git logo), Build (Gear), Test (Checklist), Deploy (Deploy/Rocket), Monitor (Graph). Modern, sleek interface style. Text in Portuguese.

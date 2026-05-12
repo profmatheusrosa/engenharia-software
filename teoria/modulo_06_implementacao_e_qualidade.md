@@ -34,7 +34,7 @@ Simulam o comportamento do usuário final, clicando em botões e navegando no na
 - **Ferramentas:** Cypress, Selenium, Playwright.
 - Dica: Tenha poucos testes E2E (Pirâmide de Testes), pois são lentos e frágeis.
 
-![Pirâmide de Testes clássica ilustrando as camadas de Testes Unitários, Integração e E2E, além de Testes Manuais, com indicador de Velocidade/Custo](../imagens/imagem_13_piramide_de_testes.png)
+![Pirâmide de Testes clássica ilustrando as camadas de Testes Unitários, Integração e E2E, além de Testes Manuais, com indicador de Velocidade/Custo](../imagens/imagem_14_piramide_de_testes.png)
 
 ## 6.5 TDD (Test Driven Development)
 
@@ -66,7 +66,7 @@ Revisão de código por pares. Não é para caçar bugs (testes fazem isso), é 
 - Discutir melhores soluções de design.
 - **Dica:** Seja gentil. Critique o código, não a pessoa.
 
-![Diagrama de fluxo simples do Code Review, do Pull Request ao Merge](../imagens/imagem_14_fluxo_code_review.png)
+![Diagrama de fluxo simples do Code Review, do Pull Request ao Merge](../imagens/imagem_15_fluxo_code_review.png)
 
 ## Referências
 

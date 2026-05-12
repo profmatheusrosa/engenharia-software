@@ -23,6 +23,16 @@ Mostra **quem** (ator) faz **o que** (funcionalidade) no sistema.
 Mostra a estrutura estática do sistema (classes, atributos, métodos e relacionamentos).
 - Útil para: Discutir design de código e dependências.
 
+#### Relacionamentos entre Objetos
+Para modelar como as classes interagem, usamos quatro tipos principais de relacionamentos:
+
+1.  **Associação:** Uma conexão simples onde um objeto utiliza serviços de outro (ex: Um `Professor` que leciona em uma `Turma`).
+2.  **Agregação:** Um relacionamento "todo-parte" fraco. A parte pode existir sem o todo (ex: Um `Departamento` tem `Professores`, mas se o departamento acabar, os professores continuam existindo). Representado por um losango vazio ($\diamond$).
+3.  **Composição:** Um relacionamento "todo-parte" forte. A parte não existe sem o todo (ex: Uma `Casa` tem `Quartos`. Se a casa for destruída, os quartos também deixam de existir). Representado por um losango preenchido ($\blacklozenge$).
+4.  **Herança (Generalização):** Indica que uma classe é uma especialização de outra (ex: `Desenvolvedor` é um tipo de `Funcionário`). Representado por uma seta com triângulo vazio.
+
+![Infográfico ilustrando os tipos de relacionamentos UML: Associação, Agregação, Composição e Herança](../imagens/imagem_09_relacionamentos_uml.png)
+
 ### Diagrama de Sequência
 Mostra como os objetos interagem ao longo do tempo para realizar um cenário.
 - Útil para: Entender fluxos complexos e chamadas de API.

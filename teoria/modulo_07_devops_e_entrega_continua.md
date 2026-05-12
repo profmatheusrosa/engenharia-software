@@ -24,7 +24,7 @@ Um modelo robusto com branches específicas:
 ### Trunk-Based Development
 Mais moderno e ágil. Todos commitam na `main` (trunk) frequentemente (talvez usando Feature Flags para esconder coisas incompletas). Evita o "Merge Hell".
 
-![Comparativo visual entre Git Flow e Trunk-Based Development](../imagens/imagem_15_git_flow_vs_trunk.png)
+![Comparativo visual entre Git Flow e Trunk-Based Development](../imagens/imagem_16_git_flow_vs_trunk.png)
 
 ## 7.2 Conventional Commits
 
@@ -60,7 +60,7 @@ A prática de integrar código várias vezes ao dia.
 - **Continuous Delivery:** O software está sempre pronto para ir para produção (um humano aperta o botão).
 - **Continuous Deployment:** O software vai para produção automaticamente se passar nos testes (sem intervenção humana).
 
-![Visualização horizontal de uma Pipeline de Integração e Entrega Contínua](../imagens/imagem_16_pipeline_cicd.png)
+![Visualização horizontal de uma Pipeline de Integração e Entrega Contínua](../imagens/imagem_17_pipeline_cicd.png)
 
 **Exercício 7.3:** O que acontece na fase de "Build" de uma pipeline de CI?
 
